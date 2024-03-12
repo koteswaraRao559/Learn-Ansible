@@ -1,5 +1,5 @@
 - name: Demo on Conditions
-  hosts: all
+  hosts: localhost
   tasks:
     - name: print Linux
       ansible.builtin.debug:
