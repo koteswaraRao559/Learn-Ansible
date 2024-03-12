@@ -21,3 +21,14 @@
       ansible.builtin.debug:
         msg: Fruit - {{ item }}
       loop: "{{ fruits }}"
+
+- name: Demo on loops
+  hosts: localhost
+  tasks:
+    - name: Loop
+      ansible.builtin.debug:
+        msg: Fruit - {{ item }}
+      loop:
+        - { name: "apple", quantity: 100}
+        - { name: "banana", quantity: 100}
+        - { name: "Orange", quantity: 100}
